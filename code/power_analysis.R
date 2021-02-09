@@ -1,16 +1,13 @@
 rm(list = ls());
 
-library(dplyr);
-# install.packages("senstrat")
-library("lmtest")
-library("sandwich")
-library("xtable")
-library("sensitivitymv")
-
-
-#################
+library(dplyr)
+library(lmtest)
+library(sandwich)
+library(xtable)
+library(sensitivitymv)
 library(senstrat)
 
+###
 if.bb.ms=FALSE;
 alpha = 0.05;
 sigma = 0.5; 

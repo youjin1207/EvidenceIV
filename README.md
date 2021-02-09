@@ -2,18 +2,17 @@
 
 ### Information
 
-- Author: Anqi Zhao,Youjin Lee, Dylan Small, and Bikram Karmakar
-- Required packages: MASS, dplyr, ivreg, senstrat, MatchIt, lmtest, sandwich, xtable, sensitivitymv
+- **Author**: Anqi Zhao,Youjin Lee, Dylan Small, and Bikram Karmakar
+- **Required packages**: MASS, dplyr, ivreg, senstrat, MatchIt, lmtest, sandwich, xtable, sensitivitymv
 
 
 ### Code
 
-- `code/design.R`: This code investigates the effect of different design ratios.
+- `code/design.R`: This code investigates the effect of different design ratios. This replicates Tabel 1.
 
-- `code/BB_RD_2SLS.R`: This code investigates the validity of balanced block design in comparison with the reinforced analysis and two stage least squares regression.
+- `code/BB_RD_2SLS.R`: This code investigates the validity of balanced block design in comparison with the reinforced analysis and two stage least squares regression. This replicates Table 2.
 
-- `code/power_analysis.R`: 
-
+- `code/power_analysis.R`: This code investigates power of sensitivity analysis for valid analyses. This replicates Table 3.
 
 - `code/two_IVs.R`: This code generates two nested instruments and implements the mutual stratification and the Kruskal-Wallis test. This replicates Figure 1.
 

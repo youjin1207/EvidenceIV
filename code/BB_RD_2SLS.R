@@ -1,9 +1,9 @@
 rm(list = ls());
-# install.packages("ivreg", dependencies = TRUE)
-library("MASS")
+library(MASS)
 library(dplyr)
-library("ivreg")
+library(ivreg)
 library(senstrat)
+###
 trts = c("11","10","01","00");
 trt.mat = rbind(c(1,1,0,0), c(1,0,1,0));
 rownames(trt.mat) = c("Z1","Z2")

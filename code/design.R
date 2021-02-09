@@ -1,12 +1,7 @@
-########################
-# ----------------------
-# This code investigates the effect of different design ratios
-
-
 rm(list = ls());
-
-library("MASS")
+library(MASS)
 library(dplyr)
+library(senstrat)
 #==========================
 #------------------------------
 # Bikram 2020
@@ -72,10 +67,6 @@ generateData.fixedZ1Z2.list <- function(var.epsilon = var.epsilon,#var.eta = var
 }
 
 #################
-
-
-library(senstrat)
-
 trts = c("11","10","01","00");
 trt.mat = rbind(c(1,1,0,0), c(1,0,1,0));
 rownames(trt.mat) = c("Z1","Z2")
@@ -174,6 +165,3 @@ write.table(
 
 apply(p.nRep.hl, 2, function(x) mean(x<0.05)); 
 apply(p.nRep.ve, 2, function(x) mean(x<0.05))
-
-
-
